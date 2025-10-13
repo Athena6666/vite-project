@@ -4,9 +4,14 @@ const router = createRouter({
   history: createWebHistory(),
   routes: [
     {
+      path: '/',
+      redirect: '/login'
+    },
+    {
       path: "/login",
+      name: 'Login',
       component: LoginPage
     }
   ]
 })
-export default router;
+export default router
