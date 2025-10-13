@@ -17,15 +17,17 @@ const onSubmit = () => {
   <div class="login">
     <el-card class="card">
       <h2 class="top">登录</h2>
-      <el-form :model="form" label-width="100px">
+      <el-form :model="form" label-width="80px" size="large">
         <el-form-item prop="userName" label="用户名">
-          <el-input v-model="form.userName"></el-input>
+          <el-input v-model="form.userName" style="width: 350px;"></el-input>
         </el-form-item>
         <el-form-item prop="passWord" label="密码">
-          <el-input v-model="form.passWord" type="password"></el-input>
+          <el-input v-model="form.passWord" type="password" style="width: 350px;"></el-input>
         </el-form-item>
       </el-form>
-      <el-button type="primary" @click="onSubmit()">登录</el-button>
+      <div class="bottom">
+        <el-button class="button" type="primary" @click="onSubmit()">登录</el-button>
+      </div>
     </el-card>
   </div>
 </template>
@@ -47,5 +49,17 @@ const onSubmit = () => {
 .top {
   text-align: center;
   padding-bottom: 20px;
+}
+
+.bottom {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.button {
+  width: 400px;
+  height: 30px;
+  font-size: 16px;
+  padding: 20px;
 }
 </style>
