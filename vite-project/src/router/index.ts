@@ -1,11 +1,12 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import LoginPage from '../view/index/LoginPage.vue'
+import RootPage from '../view/index/RootPage.vue'
 const router = createRouter({
   history: createWebHistory(),
   routes: [
     {
       path: '/',
-      redirect: '/login'
+      component: RootPage
     },
     {
       path: "/login",
