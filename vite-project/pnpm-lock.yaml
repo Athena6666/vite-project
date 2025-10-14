@@ -17,6 +17,9 @@ dependencies:
   vue-router:
     specifier: ^4.0.13
     version: 4.0.13(vue@3.5.22)
+  vuex:
+    specifier: ^4.0.2
+    version: 4.0.2(vue@3.5.22)
 
 devDependencies:
   '@types/node':
@@ -1243,3 +1246,12 @@ packages:
       '@vue/server-renderer': 3.5.22(vue@3.5.22)
       '@vue/shared': 3.5.22
       typescript: 5.9.3
+
+  /vuex@4.0.2(vue@3.5.22):
+    resolution: {integrity: sha512-M6r8uxELjZIK8kTKDGgZTYX/ahzblnzC4isU1tpmEuOIIKmV+TRdc+H4s8ds2NuZ7wpUTdGRzJRtoj+lI+pc0Q==}
+    peerDependencies:
+      vue: ^3.0.2
+    dependencies:
+      '@vue/devtools-api': 6.6.4
+      vue: 3.5.22(typescript@5.9.3)
+    dev: false
