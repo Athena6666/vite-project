@@ -46,7 +46,7 @@ const onSubmit = async (ruleFormRef: FormInstance | undefined) => {
         </el-form-item>
       </el-form>
       <div class="bottom">
-        <el-button class="button" type="primary" @click="onSubmit(ruleFormRef)">登录</el-button>
+        <el-button class="button" @click="onSubmit(ruleFormRef)">登录</el-button>
       </div>
     </el-card>
   </div>
